@@ -1334,7 +1334,7 @@ input:checked {
 }
 
 .navigation-bar.open {
-  height: 80px; /* Adjust based on the final size you want */
+  height: 60px; /* Adjust based on the final size you want */
 }
 
 .navigation-bar ul {
@@ -1388,7 +1388,7 @@ input:checked {
 
 .ql-btn.open {
   transform: translateY(
-    80px
+    60px
   ); /* Adjust this value based on the actual height of the NavigationBar when open */
 }
 

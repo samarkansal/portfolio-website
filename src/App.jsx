@@ -4,6 +4,27 @@ import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
 import "./App.css";
 
+import githubIcon from "./assets/images/social-links/github.svg";
+import youtubeIcon from "./assets/images/social-links/youtube.svg";
+import AttendifyHome from "./assets/images/work/Attendify-home.png";
+import carcoolHome from "./assets/images/work/Carcool-home.png";
+import duckyHome from "./assets/images/work/Ducky-home.webp";
+
+import portrait from "./assets/images/work/portrait.webp";
+
+import js from "./assets/images/skills/js.webp";
+import a11y from "./assets/images/skills/a11y.webp";
+import git from "./assets/images/skills/git.webp";
+import graphql from "./assets/images/skills/graphql.webp";
+import html from "./assets/images/skills/html.webp";
+import nextjs from "./assets/images/skills/next-js.webp";
+import nodejs from "./assets/images/skills/node-js.webp";
+import react from "./assets/images/skills/react.webp";
+import ruby from "./assets/images/skills/ruby.webp";
+import shell from "./assets/images/skills/shell.webp";
+import svelte from "./assets/images/skills/svelte.webp";
+import typescript from "./assets/images/skills/typescript.webp";
+
 function App() {
   const [theme, setTheme] = useState("dark");
   const [isOpen, setIsOpen] = useState(false);
@@ -87,7 +108,7 @@ function App() {
             onChange={toggleTheme}
             checked={theme == "dark"}
           />
-          <label htmlFor="checkbox" className="checkbox-label">
+          <label htmlhtmlFor="checkbox" className="checkbox-label">
             <i className="fas fa-moon"></i>
             <i className="fas fa-sun"></i>
             <span className="ball"></span>
@@ -167,11 +188,7 @@ function App() {
                         rel="noopener"
                         title="Source code"
                       >
-                        <img
-                          src="src/assets/images/social-links/github.svg"
-                          alt="Attendify"
-                          loading="lazy"
-                        />
+                        <img src={githubIcon} alt="Attendify" loading="lazy" />
                       </a>
                     </div>
                     <div>
@@ -189,22 +206,14 @@ function App() {
                         rel="noopener"
                         title="Source code"
                       >
-                        <img
-                          src="src/assets/images/social-links/youtube.svg"
-                          alt="Attendify"
-                          loading="lazy"
-                        />
+                        <img src={youtubeIcon} alt="Attendify" loading="lazy" />
                       </a>
                     </div>
                   </div>
                 </div>
 
                 <picture className="work-img">
-                  <img
-                    loading="lazy"
-                    src="src/assets/images/work/Attendify-home.png"
-                    alt="Carcool Home"
-                  />
+                  <img loading="lazy" src={AttendifyHome} alt="Carcool Home" />
                 </picture>
               </div>
               <div className="work-box">
@@ -239,11 +248,7 @@ function App() {
                         rel="noopener"
                         title="Source code"
                       >
-                        <img
-                          src="src/assets/images/social-links/github.svg"
-                          alt="GitHub"
-                          loading="lazy"
-                        />
+                        <img src={githubIcon} alt="GitHub" loading="lazy" />
                       </a>
                     </div>
                   </div>
@@ -251,7 +256,7 @@ function App() {
                 <picture className="work-img">
                   <img
                     loading="lazy"
-                    src="src/assets/images/work/Carcool-home.png"
+                    src={carcoolHome}
                     alt="portfolio template"
                   />
                 </picture>
@@ -287,21 +292,13 @@ function App() {
                         rel="noopener"
                         title="Source code"
                       >
-                        <img
-                          src="src/assets/images/social-links/github.svg"
-                          alt="GitHub"
-                          loading="lazy"
-                        />
+                        <img src={githubIcon} alt="GitHub" loading="lazy" />
                       </a>
                     </div>
                   </div>
                 </div>
                 <picture className="work-img">
-                  <img
-                    loading="lazy"
-                    src="src/assets/images/work/Ducky-home.JPEG"
-                    alt="contribute dev"
-                  />
+                  <img loading="lazy" src={duckyHome} alt="contribute dev" />
                 </picture>
               </div>
             </div>
@@ -314,70 +311,70 @@ function App() {
             </h2>
             <div className="skills-imgs">
               <img
-                src="src/assets/images/skills/react.webp"
+                src={react}
                 alt="React"
                 className="skills-img"
                 loading="lazy"
                 title="React"
               />
               <img
-                src="src/assets/images/skills/svelte.webp"
+                src={svelte}
                 alt="Svelte"
                 className="skills-img"
                 loading="lazy"
                 title="Svelte"
               />
               <img
-                src="src/assets/images/skills/typescript.webp"
+                src={typescript}
                 alt="Typescript"
                 className="skills-img"
                 loading="lazy"
                 title="Typescript"
               />
               <img
-                src="src/assets/images/skills/a11y.webp"
+                src={a11y}
                 alt="Accessibility"
                 className="skills-img"
                 loading="lazy"
                 title="Web Accessibility"
               />
               <img
-                src="src/assets/images/skills/shell.webp"
+                src={shell}
                 alt="Shell"
                 className="skills-img"
                 loading="lazy"
                 title="Shell"
               />
               <img
-                src="src/assets/images/skills/next-js.webp"
+                src={nextjs}
                 alt="NextJS"
                 className="skills-img"
                 loading="lazy"
                 title="NextJS"
               />
               <img
-                src="src/assets/images/skills/graphql.webp"
+                src={graphql}
                 alt="Graph Ql"
                 className="skills-img"
                 loading="lazy"
                 title="Graph QL"
               />
               <img
-                src="src/assets/images/skills/git.webp"
+                src={git}
                 alt="Git"
                 className="skills-img"
                 loading="lazy"
                 title="Git"
               />
               <img
-                src="src/assets/images/skills/html.webp"
+                src={html}
                 alt="CSS"
                 className="skills-img"
                 loading="lazy"
                 title="CSS"
               />
               <img
-                src="src/assets/images/skills/js.webp"
+                src={js}
                 alt="JavaScript"
                 className="skills-img"
                 loading="lazy"
@@ -409,7 +406,7 @@ function App() {
                   2025.
                 </p>
                 <img
-                  src="src/assets/images/portrait.jpg"
+                  src={portrait}
                   alt="Samar Kansal"
                   className="signatures"
                   loading="lazy"
@@ -417,11 +414,11 @@ function App() {
               </div>
               <form action="#" className="contact-form" netlify>
                 <div className="form-field">
-                  <label for="name">Name</label>
+                  <label htmlFor="name">Name</label>
                   <input type="text" name="name" id="name" required />
                 </div>
                 <div className="form-field">
-                  <label for="email">Email</label>
+                  <label htmlFor="email">Email</label>
                   <input
                     type="email"
                     name="email"
@@ -431,7 +428,7 @@ function App() {
                   />
                 </div>
                 <div className="form-field">
-                  <label for="message">How can I help you?</label>
+                  <label htmlFor="message">How can I help you?</label>
                   <textarea name="message" id="message" required></textarea>
                 </div>
                 <button type="submit" className="btn btn-cta">

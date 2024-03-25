@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client1
+  namespace: portfolio1
+  labels:
+    app: client1
+spec:
+  containers:
+    - name: client1
+      image: samarkansal/portfolio:client1.0
+      stdin: true
+      tty: true
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: client1
+  namespace: portfolio1
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: client1
+  type: LoadBalancer

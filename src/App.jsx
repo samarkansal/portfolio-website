@@ -108,7 +108,7 @@ function App() {
             onChange={toggleTheme}
             checked={theme == "dark"}
           />
-          <label htmlhtmlFor="checkbox" className="checkbox-label">
+          <label htmlFor="checkbox" className="checkbox-label">
             <i className="fas fa-moon"></i>
             <i className="fas fa-sun"></i>
             <span className="ball"></span>
@@ -412,7 +412,7 @@ function App() {
                   loading="lazy"
                 />
               </div>
-              <form action="#" className="contact-form" netlify>
+              <form action="#" className="contact-form">
                 <div className="form-field">
                   <label htmlFor="name">Name</label>
                   <input type="text" name="name" id="name" required />
@@ -424,7 +424,7 @@ function App() {
                     name="email"
                     id="email"
                     required
-                    inputmode="email"
+                    inputMode="email"
                   />
                 </div>
                 <div className="form-field">

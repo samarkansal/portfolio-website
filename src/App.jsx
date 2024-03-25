@@ -5,12 +5,16 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 import githubIcon from "./assets/images/social-links/github.svg";
+import phoneIcon from "./assets/images/social-links/phone.png";
+import emailIcon from "./assets/images/social-links/email.png";
+import linkedinIcon from "./assets/images/social-links/linkedin.svg";
 import youtubeIcon from "./assets/images/social-links/youtube.svg";
 import AttendifyHome from "./assets/images/work/Attendify-home.png";
 import carcoolHome from "./assets/images/work/Carcool-home.png";
 import duckyHome from "./assets/images/work/Ducky-home.webp";
 
 import portrait from "./assets/images/work/portrait.webp";
+import avatar from "./assets/images/work/avatar.png";
 
 import js from "./assets/images/skills/js.webp";
 import a11y from "./assets/images/skills/a11y.webp";
@@ -120,34 +124,41 @@ function App() {
           <div className="container">
             <h2 className="h2">About me</h2>
             <div className="about-text-container">
-              <p>
+              <p className="p-avt-text">
                 I'm currently pursuing a Master’s in Computer Science at
                 Virginia Tech, with an anticipated graduation in December 2024.
                 As a current Software Developer with Virginia Tech's Division of
                 IT and with prior experience at ServiceNow and AlphaICs, I've
                 developed strong skills in JavaScript, React, MySQL and JAVA.
+                <br />
                 I'm seeking software engineering intern/co-op positions starting
                 May 2024 and open to full-time roles from January 2025.
-              </p>
-              <div>
-                <a
-                  href="Samar_Kansal_Resume.pdf"
-                  target="_blank"
-                  className="btn btn-cta"
-                >
-                  View CV
-                </a>
-                <a
-                  href="Samar_Kansal_Resume.pdf"
-                  download="Samar_Kansal_Resume.pdf"
-                  className="btn btn-secondary"
-                >
-                  Download CV
-                </a>
+                <br />
+                <br />
                 <strong href="#" className="hire-alert">
                   <span className="indicator"></span>
                   Available for hire
                 </strong>
+              </p>
+
+              <div className="avatar-cont">
+                <img src={avatar} className="avatar-img" />
+                <div className="cv-link-cont">
+                  <a
+                    href="Samar_Kansal_Resume.pdf"
+                    target="_blank"
+                    className="btn btn-cta"
+                  >
+                    View CV
+                  </a>
+                  <a
+                    href="Samar_Kansal_Resume.pdf"
+                    download="Samar_Kansal_Resume.pdf"
+                    className="btn btn-secondary"
+                  >
+                    Download CV
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -386,7 +397,7 @@ function App() {
         <section className="contact">
           <div className="container">
             <h2 className="h2" id="contact">
-              Send Message
+              Let's Connect
             </h2>
             <div className="contact-content">
               <div className="contact-textbox">
@@ -395,46 +406,51 @@ function App() {
                   Available for hire
                 </strong>
                 <p className="contact-text">
-                  As a software engineer, I construct web interfaces and design
-                  systems with a special love for accessibility and the
-                  performance. I tend to code things from scratch and enjoy
-                  bringing ideas to life.
+                  As a software engineer, I specialize in constructing web
+                  interfaces and designing backend systems. I have a penchant
+                  for coding from scratch and take pleasure in turning ideas
+                  into functional realities. I thrive on solving complex
+                  problems with innovative solutions, always with a keen eye on
+                  performance and scalability.
                 </p>
                 <p className="contact-text">
                   I'm seeking software engineering intern/co-op positions
                   starting May 2024 and open to full-time roles from January
                   2025.
                 </p>
-                <img
-                  src={portrait}
-                  alt="Samar Kansal"
-                  className="signatures"
-                  loading="lazy"
-                />
               </div>
-              <form action="#" className="contact-form">
-                <div className="form-field">
-                  <label htmlFor="name">Name</label>
-                  <input type="text" name="name" id="name" required />
-                </div>
-                <div className="form-field">
-                  <label htmlFor="email">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    required
-                    inputMode="email"
-                  />
-                </div>
-                <div className="form-field">
-                  <label htmlFor="message">How can I help you?</label>
-                  <textarea name="message" id="message" required></textarea>
-                </div>
-                <button type="submit" className="btn btn-cta">
-                  Send
-                </button>
-              </form>
+              <div className="connect-box">
+                <a target="_blank" rel="noopener" title="Source code">
+                  <img src={phoneIcon} alt="SK" loading="lazy" />
+                  +1(826)202-0059
+                </a>
+                <a
+                  href="mailto:samarkansal@vt.edu"
+                  rel="noopener"
+                  title="Email"
+                >
+                  <img src={emailIcon} alt="SK" loading="lazy" />
+                  samarkansal@vt.edu
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/samar-kansal-015951150/"
+                  target="_blank"
+                  rel="noopener"
+                  title="Source code"
+                >
+                  <img src={linkedinIcon} alt="SK" loading="lazy" />
+                  linkedin.com/samarkansal
+                </a>
+                <a
+                  href="https://github.com/samarkansal/"
+                  target="_blank"
+                  rel="noopener"
+                  title="Source code"
+                >
+                  <img src={githubIcon} alt="SK" loading="lazy" />
+                  github.com/samarkansal
+                </a>
+              </div>
             </div>
           </div>
         </section>

@@ -1,21 +1,21 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: client1
+  name: client2
   namespace: portfolio1
   labels:
-    app: client1
+    app: client2
 spec:
   containers:
-    - name: client1
-      image: samarkansal/portfolio:client1.0
+    - name: client2
+      image: samarkansal/portfolio:client2.0
       stdin: true
       tty: true
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: client1
+  name: client2
   namespace: portfolio1
 spec:
   ports:
@@ -24,5 +24,5 @@ spec:
       protocol: TCP
       targetPort: 8080
   selector:
-    app: client1
+    app: client2
   type: LoadBalancer

@@ -996,7 +996,7 @@ body.dark .work-links img {
 
 .contact-content {
   display: grid;
-  grid-template-columns: minmax(245px, 35%) 1fr;
+  grid-template-columns: minmax(245px, 55%) 1fr;
   margin-block: var(--gutter-x-large);
   border: 1px solid var(--border);
   border-radius: var(--gutter-nano);
@@ -1014,6 +1014,9 @@ body.dark .work-links img {
 .contact-textbox,
 .contact-form {
   padding: var(--gutter-large) var(--gutter-small);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .hire-alert {
@@ -1416,15 +1419,6 @@ input:checked {
   margin-top: 2rem;
 }
 
-/* Targets the second column to align items as specified */
-.about-text-container div {
-  display: grid;
-  flex-direction: column;
-  grid-template-columns: 1fr 1fr; /* Creates two columns */
-  gap: 20px; /* Space between grid items */
-  justify-content: center;
-}
-
 .about-text-container a {
   padding: 10px;
   margin: 2rem;
@@ -1434,9 +1428,57 @@ input:checked {
   grid-column: 1 / -1; /* Spans from the first column line to the last */
   justify-self: center;
   font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+.avatar-img {
+  height: 250px;
+  width: 200px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  object-fit: fill;
+}
+.cv-link-cont {
+  display: flex;
+  flex-direction: row;
+}
+.avatar-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p-avt-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .work-links > div {
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+.connect-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  margin-top: -30px;
+  gap: 20px;
+}
+
+.connect-box a {
+  color: var(--important);
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+body.dark .connect-box img {
+  filter: invert(1);
+}
+
+.connect-box img {
+  height: 40px;
 }

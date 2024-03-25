@@ -94,7 +94,7 @@ function App() {
               <a href="#contact" className="btn btn-cta">
                 Contact me
               </a>
-              <a href="#work" className="btn btn-secondary">
+              <a href="#projects" className="btn btn-secondary">
                 See my work
               </a>
             </div>

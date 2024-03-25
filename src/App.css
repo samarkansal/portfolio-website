@@ -725,7 +725,6 @@ body.dark .work-links img {
 .work-technologies,
 .work-links {
   --delay: 0.2s;
-  animation: slide-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
   animation-play-state: paused;
 }
 
@@ -739,6 +738,8 @@ body.dark .work-links img {
 
 .work-links {
   animation-delay: calc(var(--delay) * 2);
+  justify-content: space-around;
+  width: 100%;
 }
 
 @keyframes slide-up {
@@ -1067,7 +1068,7 @@ body.dark .work-links img {
 }
 
 .signatures {
-  inline-size: 150px;
+  inline-size: 50px;
 }
 
 body.light .signatures {
@@ -1433,4 +1434,9 @@ input:checked {
   grid-column: 1 / -1; /* Spans from the first column line to the last */
   justify-self: center;
   font-size: 1.4rem;
+}
+.work-links > div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }

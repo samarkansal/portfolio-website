@@ -131,136 +131,313 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="work">
+        <section className="work" id="projects">
           <div className="container">
-            <h2 className="h2" id="projects">
-              Projects
-            </h2>
+            <h2 className="h2">Projects</h2>
             <div className="work-boxes">
               <div className="work-box">
                 <div className="work-textbox">
-                  <h3 className="h3">portfolio template</h3>
+                  <h3 className="h3">Attendify</h3>
 
                   <p className="work-text">
-                    A free to use, minimal and accessible portfolio template for
-                    developers.
+                    Meeting scheduler and QR based attendance management system
                   </p>
 
                   <ol className="work-technologies">
-                    <li>React</li>
-                    <li>Gatsby</li>
-                    <li>SCSS</li>
-                    <li>MDX</li>
+                    <li>Vue.js</li>
+                    <li>Node</li>
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>Pinia</li>
                   </ol>
 
                   <div className="work-links">
-                    <a
-                      href="https://github.com/devsyedmohsin"
-                      target="_blank"
-                      rel="noopener"
-                      className="link"
-                    >
-                      Explore this project
-                    </a>
-
-                    <a
-                      href="https://github.com/devsyedmohsin"
-                      target="_blank"
-                      rel="noopener"
-                      title="Source code"
-                    >
-                      <img
-                        src="assets/images/social-links/github.svg"
-                        alt="GitHub"
-                        loading="lazy"
-                      />
-                    </a>
+                    <div>
+                      <a
+                        href="https://github.com/samarkansal/attendify"
+                        target="_blank"
+                        rel="noopener"
+                        className="link"
+                      >
+                        Explore this project
+                      </a>
+                      <a
+                        href="https://github.com/samarkansal/attendify"
+                        target="_blank"
+                        rel="noopener"
+                        title="Source code"
+                      >
+                        <img
+                          src="src/assets/images/social-links/github.svg"
+                          alt="Attendify"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://www.youtube.com/watch?v=KfypQMR2_yM"
+                        target="_blank"
+                        rel="noopener"
+                        className="link"
+                      >
+                        View Demo
+                      </a>
+                      <a
+                        href="https://www.youtube.com/watch?v=KfypQMR2_yM"
+                        target="_blank"
+                        rel="noopener"
+                        title="Source code"
+                      >
+                        <img
+                          src="src/assets/images/social-links/youtube.svg"
+                          alt="Attendify"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
                   </div>
                 </div>
 
                 <picture className="work-img">
                   <img
                     loading="lazy"
-                    src="assets/images/work/portfolio-template.webp"
-                    alt="agency elevation"
+                    src="src/assets/images/work/Attendify-home.png"
+                    alt="Carcool Home"
                   />
                 </picture>
               </div>
               <div className="work-box">
                 <div className="work-textbox">
-                  <h3 className="h3">agencyelevation.com</h3>
+                  <h3 className="h3">CarCool</h3>
 
-                  <p className="work-text">Website for Agency Elevation.</p>
+                  <p className="work-text">
+                    A carpooling solution that leverages machine learning to
+                    match drivers and riders based on vibe scores, ensuring
+                    compatibility through shared interests.
+                  </p>
                   <ol className="work-technologies">
                     <li>React</li>
-                    <li>Gatsby</li>
-                    <li>Material UI</li>
+                    <li>FastAPI</li>
+                    <li>Google Maps</li>
+                    <li>MongoDB Geospatial</li>
                   </ol>
                   <div className="work-links">
-                    <a href="#" target="_blank" rel="noopener" className="link">
-                      Explore this project
-                    </a>
+                    <div>
+                      <a
+                        href="https://github.com/samarkansal/app-carcool-client"
+                        target="_blank"
+                        rel="noopener"
+                        className="link"
+                      >
+                        Explore this project
+                      </a>
 
-                    <a
-                      href="http://github.com/devsyedmohsin"
-                      target="_blank"
-                      rel="noopener"
-                      title="Source code"
-                    >
-                      <img
-                        src="assets/images/social-links/github.svg"
-                        alt="GitHub"
-                        loading="lazy"
-                      />
-                    </a>
+                      <a
+                        href="https://github.com/samarkansal/app-carcool-client"
+                        target="_blank"
+                        rel="noopener"
+                        title="Source code"
+                      >
+                        <img
+                          src="src/assets/images/social-links/github.svg"
+                          alt="GitHub"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <picture className="work-img">
                   <img
                     loading="lazy"
-                    src="assets/images/work/agency-elevation.webp"
+                    src="src/assets/images/work/Carcool-home.png"
                     alt="portfolio template"
                   />
                 </picture>
               </div>
               <div className="work-box">
                 <div className="work-textbox">
-                  <h3 className="h3">contribute.dev</h3>
+                  <h3 className="h3">Ducky</h3>
 
                   <p className="work-text">
-                    Website for DevX A dedicated space for developer experience
+                    An advanced AI-driven coding assistant in leveraging
+                    fine-tuned large language models, with AutoGen framework to
+                    ensure the generation of optimal code solutions.
                   </p>
                   <ol className="work-technologies">
-                    <li>Ruby</li>
-                    <li>SvelteKit</li>
-                    <li>Emotion</li>
+                    <li>Open-source LLMs</li>
+                    <li>Autogen</li>
+                    <li>Python</li>
+                    <li>Streamlit</li>
                   </ol>
                   <div className="work-links">
-                    <a href="#" target="_blank" rel="noopener" className="link">
-                      Explore this project
-                    </a>
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener"
-                      title="Source code"
-                    >
-                      <img
-                        src="assets/images/social-links/github.svg"
-                        alt="GitHub"
-                        loading="lazy"
-                      />
-                    </a>
+                    <div>
+                      <a
+                        href="https://github.com/samarkansal/ducky"
+                        target="_blank"
+                        rel="noopener"
+                        className="link"
+                      >
+                        Explore this project
+                      </a>
+                      <a
+                        href="https://github.com/samarkansal/ducky"
+                        target="_blank"
+                        rel="noopener"
+                        title="Source code"
+                      >
+                        <img
+                          src="src/assets/images/social-links/github.svg"
+                          alt="GitHub"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <picture className="work-img">
                   <img
                     loading="lazy"
-                    src="assets/images/work/contribute-dev.webp"
+                    src="src/assets/images/work/Ducky-home.JPEG"
                     alt="contribute dev"
                   />
                 </picture>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="skills">
+          <div className="container">
+            <h2 className="h2" id="skills">
+              Skills
+            </h2>
+            <div className="skills-imgs">
+              <img
+                src="src/assets/images/skills/react.webp"
+                alt="React"
+                className="skills-img"
+                loading="lazy"
+                title="React"
+              />
+              <img
+                src="src/assets/images/skills/svelte.webp"
+                alt="Svelte"
+                className="skills-img"
+                loading="lazy"
+                title="Svelte"
+              />
+              <img
+                src="src/assets/images/skills/typescript.webp"
+                alt="Typescript"
+                className="skills-img"
+                loading="lazy"
+                title="Typescript"
+              />
+              <img
+                src="src/assets/images/skills/a11y.webp"
+                alt="Accessibility"
+                className="skills-img"
+                loading="lazy"
+                title="Web Accessibility"
+              />
+              <img
+                src="src/assets/images/skills/shell.webp"
+                alt="Shell"
+                className="skills-img"
+                loading="lazy"
+                title="Shell"
+              />
+              <img
+                src="src/assets/images/skills/next-js.webp"
+                alt="NextJS"
+                className="skills-img"
+                loading="lazy"
+                title="NextJS"
+              />
+              <img
+                src="src/assets/images/skills/graphql.webp"
+                alt="Graph Ql"
+                className="skills-img"
+                loading="lazy"
+                title="Graph QL"
+              />
+              <img
+                src="src/assets/images/skills/git.webp"
+                alt="Git"
+                className="skills-img"
+                loading="lazy"
+                title="Git"
+              />
+              <img
+                src="src/assets/images/skills/html.webp"
+                alt="CSS"
+                className="skills-img"
+                loading="lazy"
+                title="CSS"
+              />
+              <img
+                src="src/assets/images/skills/js.webp"
+                alt="JavaScript"
+                className="skills-img"
+                loading="lazy"
+                title="JavaScript"
+              />
+            </div>
+          </div>
+        </section>
+        <section className="contact">
+          <div className="container">
+            <h2 className="h2" id="contact">
+              Send Message
+            </h2>
+            <div className="contact-content">
+              <div className="contact-textbox">
+                <strong href="#" className="hire-alert">
+                  <span className="indicator"></span>
+                  Available for hire
+                </strong>
+                <p className="contact-text">
+                  As a software engineer, I construct web interfaces and design
+                  systems with a special love for accessibility and the
+                  performance. I tend to code things from scratch and enjoy
+                  bringing ideas to life.
+                </p>
+                <p className="contact-text">
+                  I'm seeking software engineering intern/co-op positions
+                  starting May 2024 and open to full-time roles from January
+                  2025.
+                </p>
+                <img
+                  src="src/assets/images/portrait.jpg"
+                  alt="Samar Kansal"
+                  className="signatures"
+                  loading="lazy"
+                />
+              </div>
+              <form action="#" className="contact-form" netlify>
+                <div className="form-field">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" required />
+                </div>
+                <div className="form-field">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    inputmode="email"
+                  />
+                </div>
+                <div className="form-field">
+                  <label for="message">How can I help you?</label>
+                  <textarea name="message" id="message" required></textarea>
+                </div>
+                <button type="submit" className="btn btn-cta">
+                  Send
+                </button>
+              </form>
             </div>
           </div>
         </section>

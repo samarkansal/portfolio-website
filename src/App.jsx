@@ -315,11 +315,9 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="skills">
+        <section className="skills" id="skills">
           <div className="container">
-            <h2 className="h2" id="skills">
-              Skills
-            </h2>
+            <h2 className="h2">Skills</h2>
             <div className="skills-imgs">
               <img
                 src={react}

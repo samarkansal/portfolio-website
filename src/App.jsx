@@ -416,8 +416,8 @@ function App() {
                 </p>
                 <p className="contact-text">
                   I'm seeking software engineering intern/co-op positions
-                  starting May 2024 and open to full-time roles from January
-                  2025.
+                  starting August 2024 and open to full-time roles from December
+                  2024.
                 </p>
               </div>
               <div className="connect-box">

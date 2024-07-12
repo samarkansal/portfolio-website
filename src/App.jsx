@@ -132,7 +132,7 @@ function App() {
                 developed strong skills in JavaScript, React, MySQL and JAVA.
                 <br />
                 I'm seeking software engineering intern/co-op positions starting
-                May 2024 and open to full-time roles from January 2025.
+                August 2024 and open to full-time roles from December 2024.
                 <br />
                 <br />
                 <strong href="#" className="hire-alert">
@@ -234,13 +234,16 @@ function App() {
                   <p className="work-text">
                     A carpooling solution that leverages machine learning to
                     match drivers and riders based on vibe scores, ensuring
-                    compatibility through shared interests.
+                    compatibility through shared interests. Utilized Kafka for
+                    handling real-time notifications and ensuring efficient
+                    communication between services.
                   </p>
                   <ol className="work-technologies">
                     <li>React</li>
                     <li>FastAPI</li>
                     <li>Google Maps</li>
                     <li>MongoDB Geospatial</li>
+                    <li>Kafka</li>
                   </ol>
                   <div className="work-links">
                     <div>

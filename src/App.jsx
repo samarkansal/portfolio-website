@@ -131,8 +131,9 @@ function App() {
                 IT and with prior experience at ServiceNow and AlphaICs, I've
                 developed strong skills in JavaScript, React, MySQL and JAVA.
                 <br />
-                I'm seeking software engineering intern/co-op positions starting
-                August 2024 and open to full-time roles from December 2024.
+                <br />
+                I'm actively seeking full-time software engineering roles
+                starting December 2024.
                 <br />
                 <br />
                 <strong href="#" className="hire-alert">
@@ -415,9 +416,8 @@ function App() {
                   performance and scalability.
                 </p>
                 <p className="contact-text">
-                  I'm seeking software engineering intern/co-op positions
-                  starting August 2024 and open to full-time roles from December
-                  2024.
+                  I'm actively seeking full-time software engineering roles
+                  starting December 2024.
                 </p>
               </div>
               <div className="connect-box">

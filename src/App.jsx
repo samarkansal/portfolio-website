@@ -76,11 +76,7 @@ function App() {
               <span>A </span>
               <Typewriter
                 options={{
-                  strings: [
-                    "Full-Stack Developer",
-                    "Database Manager",
-                    "Fast Learner",
-                  ],
+                  strings: ["Full-Stack Developer", "Database Manager", ""],
                   autoStart: true,
                   loop: true,
                   wrapperClassName: "custom-typewriter",
@@ -89,9 +85,11 @@ function App() {
             </h1>
 
             <p className="header-text">
-              Self-driven, quick starter, passionate programmer with a curious
-              mind who enjoys solving complex and challenging real-world
-              problems.
+              A software developer, specializing in full-stack web applications
+              and object-oriented programming. Strong background in algorithms,
+              data structures, and system design architecture. Excellent
+              understanding of architecting scalable and efficient system
+              designs.
             </p>
 
             <div className="header-btns">
@@ -125,15 +123,13 @@ function App() {
             <h2 className="h2">About me</h2>
             <div className="about-text-container">
               <p className="p-avt-text">
-                I'm currently pursuing a Master’s in Computer Science at
-                Virginia Tech, with an anticipated graduation in December 2024.
-                As a current Software Developer with Virginia Tech's Division of
-                IT and with prior experience at ServiceNow and AlphaICs, I've
-                developed strong skills in JavaScript, React, MySQL and JAVA.
+                As a recent CS graduate, I have over 3 years of Software
+                Development experience from various roles at ServiceNow and
+                Virginia Tech IT division. I have a strong background in
+                algorithms, data structures, and system design architecture.
                 <br />
                 <br />
-                I'm actively seeking full-time software engineering roles
-                starting December 2024.
+                I'm actively seeking full-time software engineering roles.
                 <br />
                 <br />
                 <strong href="#" className="hire-alert">
@@ -409,15 +405,11 @@ function App() {
                 </strong>
                 <p className="contact-text">
                   As a software engineer, I specialize in constructing web
-                  interfaces and designing backend systems. I have a penchant
-                  for coding from scratch and take pleasure in turning ideas
-                  into functional realities. I thrive on solving complex
-                  problems with innovative solutions, always with a keen eye on
-                  performance and scalability.
+                  interfaces and designing backend systems.
                 </p>
                 <p className="contact-text">
-                  I'm actively seeking full-time software engineering roles
-                  starting December 2024.
+                  With excellent problem-solving skills, I'm actively seeking
+                  full-time Software Engineering roles
                 </p>
               </div>
               <div className="connect-box">

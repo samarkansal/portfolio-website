@@ -73,10 +73,13 @@ function App() {
           <div className="header-textbox">
             <h1 className="h1">
               <div>Hi, I'm Samar Kansal</div>
-              <span>A </span>
               <Typewriter
                 options={{
-                  strings: ["Full-Stack Developer", "Database Manager", ""],
+                  strings: [
+                    "A Full-Stack Developer",
+                    "An AWS Solutions Architect",
+                    "A Problem Solver",
+                  ],
                   autoStart: true,
                   loop: true,
                   wrapperClassName: "custom-typewriter",
@@ -260,6 +263,24 @@ function App() {
                         title="Source code"
                       >
                         <img src={githubIcon} alt="GitHub" loading="lazy" />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://youtu.be/xfHWfBd7NY4"
+                        target="_blank"
+                        rel="noopener"
+                        className="link"
+                      >
+                        View Demo
+                      </a>
+                      <a
+                        href="https://youtu.be/xfHWfBd7NY4"
+                        target="_blank"
+                        rel="noopener"
+                        title="Source code"
+                      >
+                        <img src={youtubeIcon} alt="YouTube" loading="lazy" />
                       </a>
                     </div>
                   </div>

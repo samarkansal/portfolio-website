@@ -141,7 +141,7 @@ function App() {
                 </strong>
               </p>
 
-              <div className="avatar-cont">
+              {/* <div className="avatar-cont">
                 <img src={avatar} className="avatar-img" />
                 <div className="cv-link-cont">
                   <a
@@ -159,7 +159,7 @@ function App() {
                     Download CV
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

@@ -32,7 +32,7 @@ const Footer = () => {
             </ol>
           </nav>
           <p className="footer-text">
-            &copy; 2024 All Rights Reserved. {"  "}
+            &copy; 2025 All Rights Reserved. {"  "}
             <a
               target="_blank"
               rel="noopener"

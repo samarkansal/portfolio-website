@@ -1,38 +1,27 @@
 /* eslint-disable react/prop-types */
-// NavigationBar.jsx
 import React from "react";
-// import "./NavigationBar.css"; // Import the CSS for styling
 
-const NavigationBar = ({ isOpen }) => {
+const links = [
+  { href: "#",          label: "Home",       icon: "fa-home",         section: "" },
+  { href: "#about",     label: "About",      icon: "fa-address-card", section: "about" },
+  { href: "#experience",label: "Experience", icon: "fa-briefcase",    section: "experience" },
+  { href: "#projects",  label: "Projects",   icon: "fa-user-tie",     section: "projects" },
+  { href: "#skills",    label: "Skills",     icon: "fa-code",         section: "skills" },
+  { href: "#education", label: "Education",  icon: "fa-graduation-cap", section: "education" },
+  { href: "#contact",   label: "Contact",    icon: "fa-envelope",     section: "contact" },
+];
+
+const NavigationBar = ({ isOpen, activeSection }) => {
   return (
     <div className={`navigation-bar ${isOpen ? "open" : ""}`}>
       <ul>
-        <li>
-          <a href="#">
-            Home &nbsp;
-            <i className="fas fa-home"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#about">
-            About &nbsp; <i className="fas fa-address-card"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#projects">
-            Projects &nbsp;<i className="fas fa-user-tie"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#skills">
-            Skills &nbsp; <i className="fas fa-code"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            Contact &nbsp;<i className="fas fa-envelope"></i>
-          </a>
-        </li>
+        {links.map(({ href, label, icon, section }) => (
+          <li key={href}>
+            <a href={href} className={activeSection === section ? "nav-active" : ""}>
+              {label} &nbsp; <i className={`fas ${icon}`}></i>
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

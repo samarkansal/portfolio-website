@@ -34,7 +34,7 @@
     radial-gradient(at 70% 21%, rgba(58, 255, 186, 0.715) 0px, transparent 50%);
   --easing: cubic-bezier(0.86, 0, 0.07, 1);
 
-  --site-max-width: 1420px;
+  --site-max-width: 1080px;
   --gutter-nano: 0.5rem;
   --gutter-micro: 1rem;
   --gutter-x-small: 1.5rem;
@@ -50,7 +50,7 @@
 
 body.dark {
   --bg-color-primary: #0c0a0a;
-  --bg-color-secondary: #161211;
+  --bg-color-secondary: #1a1717;
   --bg-color-secondary-transparent: #161211d2;
   --bg-color-navbar: #0c0a0ade;
   --important: #fff;
@@ -220,11 +220,6 @@ h3,
   margin-inline: auto;
 }
 
-@media (max-width: 1375px) {
-  :root {
-    --site-max-width: 1160px;
-  }
-}
 
 @media (max-width: 1275px) {
   .container {

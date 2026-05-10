@@ -188,7 +188,7 @@ function App() {
                   </li>
                   <li>
                     Designed and built a serverless Execution Service from
-                    scratch processing 500+ daily pipeline/ML orchestration
+                    scratch processing 50k+ daily pipeline/ML orchestration
                     requests with p99 latency under 3s at 99.9% uptime, serving
                     12 teams.
                   </li>
